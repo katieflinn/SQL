@@ -1,0 +1,23 @@
+--Create a clothes store database
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, color TEXT, style TEXT, price INTEGER);
+
+INSERT INTO clothes VALUES (1, 'Shirt', 'Purple', 'Tank top', 1);
+INSERT INTO clothes VALUES (2, 'Jeans', 'Blue', 'Bootcut', 3);
+INSERT INTO clothes VALUES (3, 'Shorts', 'Pink', 'Booty', 5);
+INSERT INTO clothes VALUES (4, 'shirt', 'green', 'tunic', 4);
+INSERT INTO clothes VALUES (5,'Dress', 'Yellow', 'Sundress', 10);
+INSERT INTO clothes VALUES (6, 'Dress', 'White', 'Sundress', 9);
+INSERT INTO clothes VALUES (7, ' Shirt', 'Multi', 'Short sleeve', 5);
+INSERT INTO clothes VALUES (8, 'Bottoms', 'Black', 'Yoga Pants', 4);
+INSERT INTO clothes VALUES (9, 'Bottoms', 'Pink', 'Ruffle Skirt', 6);
+INSERT INTO clothes VALUES (10, 'Jacket', 'Green print', 'Pull over', 5);
+INSERT INTO clothes VAlUES (11, 'Jacket', 'white', 'pull over', 7);
+INSERT INTO clothes VALUES (12, 'Vest', 'plaid' , 'zipperd', 8);
+INSERT INTO clothes VALUES (13, 'Dress', 'Blue', 'Prom', 6);
+INSERT INTO clothes VALUES (14, 'Shirt', 'Yellow' ,'Sun Shirt', 6);
+INSERT INTO clothes VALUES (15, 'Bottoms', 'Light blue', 'Jean Shorts', 8)
+
+--display the database ordered by prices
+SELECT * FROM clothes
+ORDER BY price desc;
